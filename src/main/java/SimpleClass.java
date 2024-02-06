@@ -1,3 +1,5 @@
+import java.time.LocalDate;
+
 public class SimpleClass {
     public static void main(String[] args){
         new SimpleClass().add(1,2);
@@ -11,5 +13,10 @@ public class SimpleClass {
      */
     public int add(int firstNumber, int secondNumber){
         return firstNumber + secondNumber;
+    }
+
+    public static boolean isNowBetween(LocalDate startingDate, LocalDate endingDate)
+    {
+        return LocalDate.now().isAfter(startingDate) && LocalDate.now().isBefore(endingDate);
     }
 }
