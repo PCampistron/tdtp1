@@ -18,9 +18,4 @@ public class SimpleClass {
         return firstNumber + secondNumber;
     }
 
-    public static boolean isDateOutside(LocalDate date, LocalDate startingDate, LocalDate endingDate)
-    {
-        return !DateUtils.isDateBetween(date, startingDate, endingDate);
-    }
-
 }
