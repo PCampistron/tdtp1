@@ -5,7 +5,7 @@ public class SimpleClass {
         new SimpleClass().add(1,2);
 
         DateUtils.isNowBetween(LocalDate.MIN, LocalDate.MAX);
-        DateUtils.isDateBetween(LocalDate.of(2024, 1, 1), LocalDate.MIN, LocalDate.MAX);
+        DateUtils.isDateBetween(LocalDate.of(2024, 1, 1), LocalDate.MIN, LocalDate.MAX, true);
     }
 
     /**
