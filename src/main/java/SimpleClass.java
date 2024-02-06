@@ -18,6 +18,12 @@ public class SimpleClass {
     public static boolean isNowBetween(LocalDate startingDate, LocalDate endingDate)
     {
         LocalDate now = LocalDate.now();
-        return now.isAfter(startingDate) && now.isBefore(endingDate);
+        return isDateBetween(startingDate, endingDate, now);
     }
+
+    private static boolean isDateBetween(LocalDate startingDate, LocalDate endingDate, LocalDate date) {
+        return date.isAfter(startingDate) && date.isBefore(endingDate);
+    }
+
+
 }
