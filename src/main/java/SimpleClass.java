@@ -3,7 +3,13 @@ public class SimpleClass {
         new SimpleClass().add(1,2);
     }
 
-    public int add(int a, int b){
-        return a + b;
+    /**
+     * Adds firstNumber and secondNumber
+     * @param firstNumber the first number
+     * @param secondNumber the second number
+     * @return the sum of firstNumber and secondNumber
+     */
+    public int add(int firstNumber, int secondNumber){
+        return firstNumber + secondNumber;
     }
 }
